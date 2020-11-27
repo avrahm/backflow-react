@@ -1,5 +1,8 @@
-import BackflowInfoBlogItem from "../BlogItems/BackflowInfoBlogItem";
-import ServicesBlogItem from "../BlogItems/ServicesBlogItem";
+import BackflowInfoBlogItem from "../../Components/BlogItems/BackflowInfoBlogItem";
+import ServicesBlogItem from "../../Components/BlogItems/ServicesBlogItem";
+import MapiFrame from "../../Components/MapiFrame/MapiFrame";
+
+import GoogleRateUsImg from "../../images/rate-us-on-google.png";
 
 export default function ContactUs() {
   return (
@@ -69,20 +72,26 @@ export default function ContactUs() {
                 >
                   <div className="card-header">Address</div>
                   <div className="card-body text-success">
-                    <h5 className="card-title text-info">
-                      P.O Box 216
-                      <br /> Clermont GA 30527
-                    </h5>
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d391552.79158432153!2d-83.99776547447951!3d34.54987366359082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885f5a6384873c31%3A0xca8c4b67da38f879!2sClermont%2C%20GA%2030527!5e0!3m2!1sen!2sus!4v1600566574017!5m2!1sen!2sus"
-                      width="100%"
-                      height="200px"
-                      frameborder="0"
-                      style={{ border: 0 }}
-                      allowfullscreen=""
-                      aria-hidden="false"
-                      tabindex="0"
-                    ></iframe>
+                    <div className="row">
+                      <div className="col-6">
+                        <h5 className="card-title text-info">
+                          P.O Box 216
+                          <br /> Clermont GA 30527
+                        </h5>
+                      </div>
+                      <div className="col-6">
+                        <a href=" https://g.page/backflow-testers-north-ga/review?rc">
+                          <img
+                            src={GoogleRateUsImg}
+                            max-height="50px"
+                            width="100%"
+                            alt="Rate Us On Google"
+                          />
+                        </a>
+                      </div>
+                    </div>
+
+                    <MapiFrame height="200px" />
                   </div>
                 </div>
               </div>

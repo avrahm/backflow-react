@@ -10,7 +10,7 @@ export default function NavBar() {
     <>
     <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
       <Navbar.Brand href="/">
-        <img src={logo} width="150" height="60" />
+        <img src={logo} width="150" height="60" alt="Backflow Testers North GA Logo" />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">

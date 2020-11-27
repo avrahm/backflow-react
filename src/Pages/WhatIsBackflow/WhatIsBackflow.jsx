@@ -1,5 +1,5 @@
-import LocationBlogItem from "../BlogItems/LocationBlogItem";
-import ServicesBlogItem from "../BlogItems/ServicesBlogItem";
+import LocationBlogItem from "../../Components/BlogItems/LocationBlogItem";
+import ServicesBlogItem from "../../Components/BlogItems/ServicesBlogItem";
 
 import BackflowDiagramImg from "../../images/backflow-diagram.png";
 
@@ -50,7 +50,7 @@ export default function WhatIsBackflow() {
           <hr className="water-hr" />
 
           <center>
-            <img src={BackflowDiagramImg} style={{width: '95%'}} />
+            <img src={BackflowDiagramImg} style={{width: '95%'}} alt="BackFlow Diagram" />
           </center>
 
           <hr className="water-hr" />

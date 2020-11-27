@@ -1,10 +1,10 @@
 import React from "react";
 
 import TestingImg from "../../images/testing.png";
-import PreventingImg from "../../images/preventing.jpg";
+import InstallationImg from "../../images/preventing.jpg";
 import RepairsImg from "../../images/repairs.jpg";
-import LocationBlogItem from "../BlogItems/LocationBlogItem";
-import BackflowInfoBlogItem from "../BlogItems/BackflowInfoBlogItem";
+import LocationBlogItem from "../../Components/BlogItems/LocationBlogItem";
+import BackflowInfoBlogItem from "../../Components/BlogItems/BackflowInfoBlogItem";
 
 export default function Services() {
   return (
@@ -43,6 +43,7 @@ export default function Services() {
             </div>
             <div className="col-md-5">
               <img
+                alt="Testing Kit"
                 src={TestingImg}
                 className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
                 width="500"
@@ -74,6 +75,7 @@ export default function Services() {
             </div>
             <div className="col-md-5 order-md-1">
               <img
+                alt="Repair Pipe illustration"
                 src={RepairsImg}
                 className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
                 width="500"
@@ -105,7 +107,8 @@ export default function Services() {
             </div>
             <div className="col-md-5">
               <img
-                src={PreventingImg}
+                alt="Backflow Installation Assembly"
+                src={InstallationImg}
                 className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
                 width="500"
                 height="500"

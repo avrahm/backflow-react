@@ -23,11 +23,11 @@ export default function ControlledCarousel() {
           <img
             className="d-block w-100"
             src={carouselImage1}
-            alt="First slide"
+            alt="North Georgia Mountains"
           />
           <Carousel.Caption className="carousel-caption text-right">
             <div className="logo">
-              <img src={logo} alt="Backflow Testers Logo" />
+              <img src={logo} alt="Backflow Testers North GA Logo" />
             </div>
             <p>
               We are Georgia’s trusted experts on all thing’s backflow related.
@@ -44,7 +44,7 @@ export default function ControlledCarousel() {
           <img
             className="d-block w-100"
             src={carouselImage2}
-            alt="Second slide"
+            alt="Backflow Pipes on a Beach"
           />
 
           <Carousel.Caption className="carousel-caption text-left">

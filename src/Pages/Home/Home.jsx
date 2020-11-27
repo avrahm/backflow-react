@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import ControlledCarousel from "./Carousel";
+import ControlledCarousel from "../../Components/Carousel/Carousel";
 
 import TestingImg from "../../images/testing.png";
-import PreventingImg from "../../images/preventing.jpg";
+import InstallationImg from "../../images/preventing.jpg";
 import RepairsImg from "../../images/repairs.jpg";
 import BackflowDiagramImg from "../../images/backflow-diagram.png";
 import NorthGAMapImg from "../../images/north-ga-county-map.jpg";
@@ -18,7 +18,7 @@ export default function Home() {
         <div className="row">
           <div className="col-lg-4">
             <img
-              alt="TestingImg"
+              alt="Testing Kit"
               src={TestingImg}
               className="bd-placeholder-img rounded-circle"
               width="140"
@@ -31,11 +31,7 @@ export default function Home() {
               out the estimate form and we’ll contact you shortly.
             </p>
             <p>
-              <Link
-                className="btn btn-secondary"
-                to="/services"
-                role="button"
-              >
+              <Link className="btn btn-secondary" to="/services" role="button">
                 View services &raquo;
               </Link>
             </p>
@@ -43,8 +39,8 @@ export default function Home() {
 
           <div className="col-lg-4">
             <img
-              alt="PreventingImg"
-              src={PreventingImg}
+              alt="Repair Pipe illustration"
+              src={RepairsImg}
               className="bd-placeholder-img rounded-circle"
               width="140"
               height="140"
@@ -56,11 +52,7 @@ export default function Home() {
               replacement. That costs you more money and may not be necessary.
             </p>
             <p>
-              <Link
-                className="btn btn-secondary"
-                to="/services"
-                role="button"
-              >
+              <Link className="btn btn-secondary" to="/services" role="button">
                 View services &raquo;
               </Link>
             </p>
@@ -68,8 +60,8 @@ export default function Home() {
 
           <div className="col-lg-4">
             <img
-              alt="RepairsImg"
-              src={RepairsImg}
+              alt="Backflow Installation Assembly"
+              src={InstallationImg}
               className="bd-placeholder-img rounded-circle"
               width="140"
               height="140"
@@ -81,11 +73,7 @@ export default function Home() {
               to bring your property into compliance.
             </p>
             <p>
-              <Link
-                className="btn btn-secondary"
-                to="/services"
-                role="button"
-              >
+              <Link className="btn btn-secondary" to="/services" role="button">
                 View services &raquo;
               </Link>
             </p>
@@ -113,7 +101,7 @@ export default function Home() {
           </div>
           <div className="col-md-5 align-items-center">
             <img
-              alt="BackflowDiagramImg"
+              alt="Backflow Instruction Diagram"
               src={BackflowDiagramImg}
               className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
               width="500"
@@ -143,7 +131,7 @@ export default function Home() {
           </div>
           <div className="col-md-5 order-md-1">
             <img
-              alt="NorthGAMapImg"
+              alt="North Georgia Map"
               src={NorthGAMapImg}
               className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
               width="500"
