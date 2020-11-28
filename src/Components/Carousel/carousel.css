@@ -18,12 +18,11 @@
 /* Declare heights because of positioning of img element */
 
 .carousel-item > img {
-  /* height: 32rem; */
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
 }
 
-.carousel-item-2 {
+.carousel-item {
   height: 32rem;
 }
 

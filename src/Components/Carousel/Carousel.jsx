@@ -36,7 +36,7 @@ export default function ControlledCarousel() {
               drinking water for our communities is kept safe.
             </p>
             <Link to="tel:706-438-2522">
-              <Button>Call Now 706-438-2522</Button>
+              <Button variant="success" size="md">Call Now 706-438-2522</Button>
             </Link>
           </Carousel.Caption>
         </Carousel.Item>
@@ -58,7 +58,7 @@ export default function ControlledCarousel() {
             </p>
 
             <Link to="/whatisbackflow">
-              <Button>Learn More</Button>
+              <Button size="sm">Learn More</Button>
             </Link>
           </Carousel.Caption>
         </Carousel.Item>

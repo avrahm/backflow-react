@@ -86,7 +86,7 @@ export default function Home() {
           <div className="col-md-7 align-items-center">
             <h2 className="featurette-heading align-items-center align-content-center">
               What is backflow
-              <span className="text-muted">and why do I need prevention?</span>
+              <span className="text-muted"> and why do I need prevention?</span>
             </h2>
             <p className="lead">
               Backflow means the undesirable reversal of flow of a liquid, gas,
