@@ -18,21 +18,11 @@ function App() {
       <NavBar />
 
       <Switch>
-        <Route path="/services">
-          <Services />
-        </Route>
-        <Route path="/whatisbackflow">
-          <WhatIsBackflow />
-        </Route>
-        <Route path="/locations">
-          <Locations />
-        </Route>
-        <Route path="/contactus">
-          <ContactUs />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
+        <Route path="/services" component={Services} />
+        <Route path="/whatisbackflow" component={WhatIsBackflow} />
+        <Route path="/locations" component={Locations} />
+        <Route path="/contactus" component={ContactUs} />
+        <Route exact path="/" component={Home} />
       </Switch>
 
       <Footer />
