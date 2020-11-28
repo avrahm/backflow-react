@@ -14,7 +14,7 @@ import ContactUs from './Pages/ContactUs/ContactUs';
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <NavBar />
 
       <Switch>
@@ -36,7 +36,7 @@ function App() {
       </Switch>
 
       <Footer />
-    </BrowserRouter>
+    </>
   );
 }
 

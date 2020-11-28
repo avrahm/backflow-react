@@ -9,28 +9,28 @@ export default function NavBar() {
   return (
     <>
     <Navbar fixed="top" collapseOnSelect expand="lg" bg="light" variant="light">
-      <Navbar.Brand to="/">
+      <Navbar.Brand href="/">
         <img src={logo} width="150" height="60" alt="Backflow Testers North GA Logo" />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link to="/">Home</Nav.Link>
+          <Nav.Link href="/">Home</Nav.Link>
           <NavDropdown title="Services" id="collasible-nav-dropdown">
-            <NavDropdown.Item to="/services">
+            <NavDropdown.Item href="/services">
               Backflow Testing
             </NavDropdown.Item>
-            <NavDropdown.Item to="/services">
+            <NavDropdown.Item href="/services">
               Backflow Repairs
             </NavDropdown.Item>
-            <NavDropdown.Item to="/services">
+            <NavDropdown.Item href="/services">
               Backflow Installation
             </NavDropdown.Item>
             <NavDropdown.Divider />
             {/* <NavDropdown.Item to="#action/3.4">Separated link</NavDropdown.Item> */}
           </NavDropdown>
-          <Nav.Link to="/locations">Locations</Nav.Link>
-          <Nav.Link to="/contactus">Contact Us</Nav.Link>
+          <Nav.Link href="/locations">Locations</Nav.Link>
+          <Nav.Link href="/contactus">Contact Us</Nav.Link>
         </Nav>
         <Nav>
           <Nav.Link eventKey={2} to="tel:706-438-2522">
