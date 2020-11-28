@@ -14,7 +14,7 @@ import ContactUs from './Pages/ContactUs/ContactUs';
 
 function App() {
   return (
-    <>
+    <div>
       <NavBar />
 
       <Switch>
@@ -26,7 +26,7 @@ function App() {
       </Switch>
 
       <Footer />
-    </>
+    </div>
   );
 }
 

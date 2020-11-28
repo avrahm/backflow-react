@@ -4,33 +4,34 @@ import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
 import logo from '../../images/backflow-testers-logo.png';
+import { Link } from 'react-router-dom';
 
 export default function NavBar() {
   return (
     <>
     <Navbar fixed="top" collapseOnSelect expand="lg" bg="light" variant="light">
-      <Navbar.Brand href="/">
+      <Navbar.Brand as={Link} to="/">
         <img src={logo} width="150" height="60" alt="Backflow Testers North GA Logo" />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="/">Home</Nav.Link>
+          <Nav.Link as={Link} to="/">Home</Nav.Link>
           <NavDropdown title="Services" id="collasible-nav-dropdown">
-            <NavDropdown.Item href="/services">
+            <NavDropdown.Item as={Link} to="/services">
               Backflow Testing
             </NavDropdown.Item>
-            <NavDropdown.Item href="/services">
+            <NavDropdown.Item as={Link} to="/services">
               Backflow Repairs
             </NavDropdown.Item>
-            <NavDropdown.Item href="/services">
+            <NavDropdown.Item as={Link} to="/services">
               Backflow Installation
             </NavDropdown.Item>
             <NavDropdown.Divider />
             {/* <NavDropdown.Item to="#action/3.4">Separated link</NavDropdown.Item> */}
           </NavDropdown>
-          <Nav.Link href="/locations">Locations</Nav.Link>
-          <Nav.Link href="/contactus">Contact Us</Nav.Link>
+          <Nav.Link as={Link} to="/locations">Locations</Nav.Link>
+          <Nav.Link as={Link} to="/contactus">Contact Us</Nav.Link>
         </Nav>
         <Nav>
           <Nav.Link eventKey={2} to="tel:706-438-2522">
