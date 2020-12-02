@@ -19,12 +19,8 @@ export default function ControlledCarousel() {
   return (
     <>
       <Carousel activeIndex={index} onSelect={handleSelect}>
-        <Carousel.Item className="carousel-item carousel-item-2">
-          <img
-            className="d-block w-100"
-            src={carouselImage1}
-            alt="North Georgia Mountains"
-          />
+        <Carousel.Item className="carousel-item carousel-item-2" style={{backgroundImage: `url(${carouselImage1})`, backgroundPosition: "center", backgroundSize: "cover"}}
+          >
           <Carousel.Caption className="carousel-caption text-right">
             <div className="logo">
               <img src={logo} alt="Backflow Testers North GA Logo" />
@@ -40,12 +36,8 @@ export default function ControlledCarousel() {
             </Link>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item className="carousel-item carousel-item-2">
-          <img
-            className="d-block w-100"
-            src={carouselImage2}
-            alt="Backflow Pipes on a Beach"
-          />
+        <Carousel.Item className="carousel-item carousel-item-2" style={{backgroundImage: `url(${carouselImage2})`, backgroundPosition: "center", backgroundSize: "cover"}}
+          >
 
           <Carousel.Caption className="carousel-caption text-left">
             <h3 className="featurette-heading font-weight-bolder">

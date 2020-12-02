@@ -28,11 +28,6 @@ body {
 
 /* Declare heights because of positioning of img element */
 
-.carousel-item > img {
-  background-position: bottom;
-  background-size: cover;
-}
-
 .carousel-item {
   height: 32rem;
 }
