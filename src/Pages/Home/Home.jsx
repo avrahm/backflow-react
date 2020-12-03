@@ -6,6 +6,7 @@ import InstallationImg from "../../images/preventing.jpg";
 import RepairsImg from "../../images/repairs.jpg";
 import BackflowDiagramImg from "../../images/backflow-diagram.png";
 import NorthGAMapImg from "../../images/north-ga-county-map.jpg";
+import { NavHashLink } from "react-router-hash-link";
 
 export default function Home() {
   return (
@@ -31,9 +32,9 @@ export default function Home() {
               out the estimate form and we’ll contact you shortly.
             </p>
             <p>
-              <Link className="btn btn-secondary" to="/services" role="button">
+              <NavHashLink className="btn btn-secondary" to="/services#testing">
                 View services &raquo;
-              </Link>
+              </NavHashLink>
             </p>
           </div>
 
@@ -52,9 +53,9 @@ export default function Home() {
               replacement. That costs you more money and may not be necessary.
             </p>
             <p>
-              <Link className="btn btn-secondary" to="/services" role="button">
+              <NavHashLink className="btn btn-secondary" to="/services#repairs">
                 View services &raquo;
-              </Link>
+              </NavHashLink>
             </p>
           </div>
 
@@ -73,9 +74,12 @@ export default function Home() {
               to bring your property into compliance.
             </p>
             <p>
-              <Link className="btn btn-secondary" to="/services" role="button">
+              <NavHashLink
+                className="btn btn-secondary"
+                to="/services#installation"
+              >
                 View services &raquo;
-              </Link>
+              </NavHashLink>
             </p>
           </div>
         </div>
