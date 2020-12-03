@@ -1,7 +1,6 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 
-
 /* Padding below the footer and lighter body text */
 
 body {
@@ -16,7 +15,6 @@ body {
 
 .carousel {
   margin-bottom: 4rem;
-  
 }
 
 /* Since positioning the image, we need to help out the caption */
@@ -33,8 +31,8 @@ body {
 }
 
 .w-100 {
-    width: 130%!important;
-    }
+  width: 130% !important;
+}
 
 /* MARKETING CONTENT
 -------------------------------------------------- */

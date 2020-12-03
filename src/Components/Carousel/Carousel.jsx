@@ -19,8 +19,14 @@ export default function ControlledCarousel() {
   return (
     <>
       <Carousel activeIndex={index} onSelect={handleSelect}>
-        <Carousel.Item className="carousel-item carousel-item-2" style={{backgroundImage: `url(${carouselImage1})`, backgroundPosition: "center", backgroundSize: "cover"}}
-          >
+        <Carousel.Item
+          className="carousel-item carousel-item-2"
+          style={{
+            backgroundImage: `url(${carouselImage1})`,
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+          }}
+        >
           <Carousel.Caption className="carousel-caption text-right">
             <div className="logo">
               <img src={logo} alt="Backflow Testers North GA Logo" />
@@ -32,13 +38,20 @@ export default function ControlledCarousel() {
               drinking water for our communities is kept safe.
             </p>
             <Link to="tel:706-438-2522">
-              <Button variant="success" size="md">Call Now 706-438-2522</Button>
+              <Button variant="success" size="md">
+                Call Now 706-438-2522
+              </Button>
             </Link>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item className="carousel-item carousel-item-2" style={{backgroundImage: `url(${carouselImage2})`, backgroundPosition: "center", backgroundSize: "cover"}}
-          >
-
+        <Carousel.Item
+          className="carousel-item carousel-item-2"
+          style={{
+            backgroundImage: `url(${carouselImage2})`,
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+          }}
+        >
           <Carousel.Caption className="carousel-caption text-left">
             <h3 className="featurette-heading font-weight-bolder">
               What is backflow and why do I need prevention?
