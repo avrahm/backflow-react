@@ -1,3 +1,5 @@
+import { NavHashLink } from "react-router-hash-link";
+
 export default function LocationBlogItem() {
   return (
     <div className="col-md-6">
@@ -6,15 +8,15 @@ export default function LocationBlogItem() {
           <strong className="d-inline-block mb-2 text-success">
             Locations
           </strong>
-          <h3 className="mb-0">We Service North GA</h3>
+          <h3 className="mb-0">We Service North Georgia</h3>
           <div className="mb-1 text-muted">Map</div>
           <p className="mb-auto">
             Cleveland, Clermont, Gainesville, Cornelia, Lula, Dahlonega,
             Dawsonville, Cumming... Just to name a few
           </p>
-          <a href="./locations" className="stretched-link">
+          <NavHashLink to="/locations#top" className="stretched-link">
             View all locations
-          </a>
+          </NavHashLink>
         </div>
       </div>
     </div>

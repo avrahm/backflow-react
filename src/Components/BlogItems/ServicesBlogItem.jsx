@@ -1,3 +1,5 @@
+import { NavHashLink } from "react-router-hash-link";
+
 export default function ServicesBlogItem() {
   return (
     <div className="col-md-6">
@@ -10,9 +12,9 @@ export default function ServicesBlogItem() {
             Ranging from testing, repairs, and installation we offer all your
             backflow needs. Give us a call today to schedule your appointment!
           </p>
-          <a href="./services" className="stretched-link">
+          <NavHashLink to="/services#top" className="stretched-link">
             View Services
-          </a>
+          </NavHashLink>
         </div>
       </div>
     </div>

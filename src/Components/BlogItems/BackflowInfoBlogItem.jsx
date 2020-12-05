@@ -1,3 +1,5 @@
+import { NavHashLink } from "react-router-hash-link";
+
 export default function BackflowInfoBlogItem() {
   return (
     <div className="col-md-6">
@@ -14,9 +16,9 @@ export default function BackflowInfoBlogItem() {
             suspended solid into the potable water supply; a backflow preventer
             is designed to keep this from happening.
           </p>
-          <a href="./whatisbackflow" className="stretched-link">
+          <NavHashLink to="/whatisbackflow#top" className="stretched-link">
             Learn more
-          </a>
+          </NavHashLink>
         </div>
       </div>
     </div>

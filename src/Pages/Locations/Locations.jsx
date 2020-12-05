@@ -1,4 +1,4 @@
-import LocationBlogItem from "../../Components/BlogItems/LocationBlogItem";
+import BackflowInfoBlogItem from "../../Components/BlogItems/BackflowInfoBlogItem";
 import ServicesBlogItem from "../../Components/BlogItems/ServicesBlogItem";
 import MapiFrame from "../../Components/MapiFrame/MapiFrame";
 
@@ -25,7 +25,7 @@ export default function Locations() {
           <hr className="water-hr" />
 
           <div className="row mb-2">
-            <LocationBlogItem />
+            <BackflowInfoBlogItem />
             <ServicesBlogItem />
           </div>
         </div>
