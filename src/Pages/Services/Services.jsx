@@ -5,8 +5,39 @@ import InstallationImg from "../../images/preventing.jpg";
 import RepairsImg from "../../images/repairs.jpg";
 import LocationBlogItem from "../../Components/BlogItems/LocationBlogItem";
 import BackflowInfoBlogItem from "../../Components/BlogItems/BackflowInfoBlogItem";
+// import ContactInfo from "../../Components/ContactInfo/ContactInfo";
+import { useState } from "react";
+import { Button, Modal } from "react-bootstrap";
+import ContactInfo from "../../Components/ContactInfo/ContactInfo";
+
+function MyModal(props) {
+  return (
+    <Modal
+      {...props}
+      // size="lg"
+      aria-labelledby="exampleModalLabel"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="exampleModalLabel">
+          Schedule an appointment
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body style={{ padding: "30px" }}>
+        <ContactInfo />
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide} variant="secondary">
+          Close
+        </Button>
+      </Modal.Footer>
+    </Modal>
+  );
+}
 
 export default function Services() {
+  const [modalShow, setModalShow] = useState(false);
+
   return (
     <main role="main" className="container">
       <div className="main">
@@ -31,14 +62,15 @@ export default function Services() {
                 fill out the estimate form and we’ll contact you shortly.
               </p>
               <p>
-                <button
-                  type="button"
-                  className="btn btn-info btn-sm"
-                  data-toggle="modal"
-                  data-target="#exampleModal"
+                <Button
+                  variant="info"
+                  size="sm"
+                  onClick={() => {
+                    setModalShow(!modalShow);
+                  }}
                 >
                   Schedule an appointment
-                </button>
+                </Button>
               </p>
             </div>
             <div className="col-md-5">
@@ -63,14 +95,15 @@ export default function Services() {
                 replacement. That costs you more money and may not be necessary.
               </p>
               <p>
-                <button
-                  type="button"
-                  className="btn btn-info btn-sm"
-                  data-toggle="modal"
-                  data-target="#exampleModal"
+                <Button
+                  variant="info"
+                  size="sm"
+                  onClick={() => {
+                    setModalShow(!modalShow);
+                  }}
                 >
                   Schedule an appointment
-                </button>
+                </Button>
               </p>
             </div>
             <div className="col-md-5 order-md-1">
@@ -95,14 +128,15 @@ export default function Services() {
                 action to bring your property into compliance.
               </p>
               <p>
-                <button
-                  type="button"
-                  className="btn btn-info btn-sm"
-                  data-toggle="modal"
-                  data-target="#exampleModal"
+                <Button
+                  variant="info"
+                  size="sm"
+                  onClick={() => {
+                    setModalShow(!modalShow);
+                  }}
                 >
                   Schedule an appointment
-                </button>
+                </Button>
               </p>
             </div>
             <div className="col-md-5">
@@ -124,6 +158,7 @@ export default function Services() {
           </div>
         </div>
       </div>
+      <MyModal show={modalShow} onHide={() => setModalShow(false)} />
     </main>
   );
 }
